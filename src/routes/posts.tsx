@@ -12,7 +12,7 @@ export default Posts
 
 // eslint-disable-next-line react-refresh/only-export-components
 export async function loader(){
-    const res = await fetch('http://localhost:3333/')
+    const res = await fetch('http://localhost:62323')
     const data= await res.json()
     return data.posts
 }

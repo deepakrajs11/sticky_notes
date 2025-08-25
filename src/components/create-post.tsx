@@ -16,7 +16,7 @@ export default function CreatePost() {
 export async function action({request}: { request: Request }){
     const formentry = await request.formData()
     const postdata = Object.fromEntries(formentry)
-    const result = await fetch('http://localhost:3333/',{
+    const result = await fetch('http://localhost:62323/',{
         method: 'POST',
         body: JSON.stringify(postdata),
         headers: {
