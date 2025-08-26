@@ -2,10 +2,10 @@ import PostList from '../components/post-list'
 import { Outlet } from 'react-router-dom'
 function Posts() {
   return (
-    <>
+    <div>
     <Outlet />
     <PostList />
-    </>
+    </div>
   )
 }
 export default Posts
